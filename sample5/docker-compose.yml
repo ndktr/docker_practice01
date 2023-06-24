@@ -1,0 +1,8 @@
+version: "3"
+services:
+    httpd:
+        image: nginx
+        ports:
+            - "8002:80"
+        volumes:
+            - ./:/usr/share/nginx/html
